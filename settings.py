@@ -1,2 +1,3 @@
+PORT = 5003
 DEBUG = False
 PRICE = 10

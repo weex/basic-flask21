@@ -49,8 +49,8 @@ def home():
                        }
            )
 
-@payment.required(PRICE)
 @app.route('/example')
+@payment.required(PRICE)
 def example_function():
     # do stuff
     return json.dumps({'first_return':'your data goes here'})
@@ -58,4 +58,4 @@ def example_function():
 if __name__ == '__main__':
     if DEBUG:
         app.debug = True
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=PORT)
