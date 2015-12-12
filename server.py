@@ -7,6 +7,8 @@ from flask import request
 from two1.lib.wallet import Wallet
 from two1.lib.bitserv.flask import Payment
 
+from settings import *
+
 app = Flask(__name__)
 wallet = Wallet()
 payment = Payment(app, wallet)

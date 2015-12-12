@@ -1,0 +1,2 @@
+DEBUG = False
+PRICE = 10
